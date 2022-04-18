@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": ["ES2019", "ES2020.Promise", "esnext.bigint"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "noErrorTruncation": true,
+    "keyofStringsOnly": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
+    ]
+  },
+  "exclude": ["node_modules"]
+}
